@@ -2,16 +2,20 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-color: #222831;
+}
 
 .nav{
     height: 50px;
-    width: 100%;
+  width: 100%;
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-evenly;
     position: fixed;
-    flex-wrap: wrap;
+    top:0px;
+ 
 }
 
 .nav>h2{
@@ -19,6 +23,7 @@
         line-height: 50px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 30px;
+        border:1px solid red;
 }
 
 .nav>h2>span{
@@ -26,7 +31,7 @@
 }
 
 .ul{
-    width: 70%;
+    width: 80%;
     line-height: 20px;
     list-style-type: none;
     display: flex;
@@ -45,10 +50,26 @@
    
 }
 
+.nav-list{
+    
+    width: 10%;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .main{
     margin-top: 20px;
     padding: 10px;
-    max-width: 100%;
+    max-width: 1320px;
+    margin: auto;
     min-width: none;
     background-color: #222831;
     display: flex;
@@ -72,8 +93,9 @@
     margin: 10px;
     padding: 10px;
     max-width: 550px;
+    margin: auto;
     min-width: 150px;
-    height:350px ;
+    /* height:350px ; */
     color: white;
     box-shadow: rgba(148, 145, 145, 0.2) 0px 2px 8px 0px;
     
@@ -119,14 +141,16 @@
     margin: 10px;
     padding: 10px;
     max-width: 550px;
+    margin: auto;
    min-width: 150px;
-    height: 350px;
+    /* height: 350px; */
     color: white;
    
    
 }
 .img1{
     max-width: 400px;
+    margin: auto;
     min-width: 150px;
     height: 350px;
     margin-top: 20px;
@@ -166,15 +190,18 @@
 
 .container1{
     overflow-x: hidden;
-    width: 3150px;
+    max-width: 1320px;
+    margin: auto;
 }
 
 .skill{
     margin-top:10px;
     padding: 10px;
-    width:3150px;
+    max-width:1320px;
+    margin: auto;
     
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     
@@ -230,35 +257,56 @@
 }
 
 .projects{
-    width: 100%;
+     width:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
     margin-top: 10px;
     
 }
 
 .project{
-    margin: 10px;
-    width: 1800px;
+   
+    max-width: 1320px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
 
 }
 
 .p1{
-    width: 500px;
-    height: 350px;
-    margin: 10px;
+    width: 30%;
     border-radius: 10px;
+    padding: 20px;
 }
 
-.p1>img{
-    width: 450px;
-    height: 350px;
+
+
+.sub-p1{
+    width: 100%;
+    
+    
+}
+
+.p1 img{
+    width: 100%;
+    aspect-ratio: 3/2;
     border-radius: 10px;
     box-shadow: rgba(242, 30, 19, 0.24) 0px 3px 8px;
+}
+.demo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.demo a{
+    color:white;
+    font-size: 17px;
+    text-decoration: none;
+    background-color:  rgb(143, 64, 64)  ;
+
 }
 
 .buttons{
@@ -300,16 +348,15 @@
 
 
 .contect{
-    width: 100%;
+    max-width: 1320px;
+    margin: auto;
     margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
    
 }
 
 .h3{
-    margin-top: 10PX;
+    margin-top: 10px;
     color: red;
     font-size: 35PX;
     font-family: "Playwrite DE Grund", cursive;
@@ -317,9 +364,13 @@
 }
 
 .con{
-    width: 1870px;
+    width: 100%;
+    margin: auto;
     margin: 10px;
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     border-radius: 10px; 
     padding-top: 10px;
      font-family: "Josefin Sans", sans-serif;
@@ -327,7 +378,7 @@
 }
 
 .con11{
-    width: 50%;
+    width: 40%;
     padding: 20px;
     box-shadow: rgba(217, 192, 192, 0.24) 0px 3px 8px;
     border-radius: 10px;
@@ -352,7 +403,7 @@
 }
 
 .con12{
-    width: 50%;
+    width: 40%;
     border-radius: 10px;
     padding: 20px;
     box-shadow: rgba(217, 192, 192, 0.24) 0px 3px 8px;
@@ -393,7 +444,7 @@
 }
 
 .con1{
-    width:  1840px; 
+    width:  100%; 
     box-shadow: rgba(245, 243, 243, 0.1) 0px 4px 12px;
     padding: 10px;
     padding-left: 20px;
@@ -425,3 +476,25 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
+
+
+.demoa {
+    padding: 5px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .demoa:hover {background-color: #3e8e41;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
